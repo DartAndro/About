@@ -13,6 +13,7 @@ header{
 }
 
 .header-inner{
+    width: 80vw;
     display: flex;
     justify-content: space-evenly;
 }
@@ -21,11 +22,6 @@ header{
     width: 180px;
     height: 122px;
     margin-right: 20px;
-    justify-content: flex-start;
-}
-
-.photo{
-    justify-content: flex-end;
 }
 
 nav{
@@ -35,6 +31,16 @@ nav{
 ul{
     list-style: none; /*убираем маркеры списка*/
     padding-left: 0; /*убираем левый отступ, равный 40px*/
+}
+
+.header_spisok{
+    margin-left: 30px;
+    display: inline;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
 }
 
 .artem{
@@ -65,6 +71,8 @@ ul{
 
 main{
     display: flex;
+    width: 100%;
+    height: 100vh;
     flex-direction: column;
     align-items: center;
     padding-left: 70px; 
@@ -73,9 +81,9 @@ main{
 
 .block1{
     position: absolute;
-    width: 1138px;
+    width: 80vw;
     height: 230px;
-    left: 172px;
+    left: 10vw;
     top: 201px;
     background: #3B3737;
     mix-blend-mode: lighten;
@@ -106,9 +114,9 @@ p{
 
 .block2{
     position: absolute;
-    width: 1138px;
+    width: 80vw;
     height: 466px;
-    left: 172px;
+    left: 10vw;
     top: 454px;
     background: #3B3737;
     mix-blend-mode: lighten;
@@ -118,16 +126,6 @@ p{
     margin-bottom: 50px;
 }
 
-li{
-    margin-left: 30px;
-    display: inline;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 44px;
-}
-
 img{
     width: 100px;
     height: 100px;
@@ -135,9 +133,9 @@ img{
 
 .block3{
     position: absolute;
-    width: 1138px;
+    width: 80vw;
     height: 306px;
-    left: 172px;
+    left: 10vw;
     top: 943px;
     background: #3B3737;
     mix-blend-mode: lighten;
@@ -148,4 +146,11 @@ img{
     border: 2px solid #FF8C00;
     border-radius: 25px;
     padding: 10px;
+}
+
+.main_spisok{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
 }
